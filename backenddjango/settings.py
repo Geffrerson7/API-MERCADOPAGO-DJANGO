@@ -31,8 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-YOUR_PUBLIC_KEY=env('YOUR_PUBLIC_KEY')
-YOUR_ACCESS_TOKEN=env('YOUR_ACCESS_TOKEN')
+YOUR_PUBLIC_KEY=os.environ.get('YOUR_PUBLIC_KEY')
+YOUR_ACCESS_TOKEN=os.environ.get('YOUR_ACCESS_TOKEN')
 
 # Application definition
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
     'rest_framework',
     'corsheaders',
     'payment',
@@ -133,6 +134,3 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 
-# CORS_ORIGIN_WHITELIST = (
-#     'http://localhost:3000',
-# )
