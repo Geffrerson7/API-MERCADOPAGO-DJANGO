@@ -1,4 +1,4 @@
-# API-MERACADO-DJANGO 
+# API-MERCADOPAGO-DJANGO 
 
 ## Descripción
 API hecha con Django Rest Framework para crear pago con la librería de mercadopago en python
