@@ -6,6 +6,14 @@ API hecha con Django Rest Framework para crear pago con la librería de mercadop
 ## Respuesta en la consola
 ![api-django-mercado-pago](https://user-images.githubusercontent.com/61089189/226239748-e84c6473-2839-41e0-b152-7b416420b81a.png)
 
+## Environment Variables
+
+Crear las siguientes variables de entornno en el archivo .env
+
+`YOUR_PUBLIC_KEY`
+
+`YOUR_ACCESS_TOKEN`
+
 ## Run Locally
 
 Clonar el repositorio
@@ -14,14 +22,14 @@ Clonar el repositorio
   https://github.com/Geffrerson7/API-MERCADOPAGO-DJANGO.git
 ```
 
-Ir al directorio al proyecto
+Ir al directorio del proyecto
 
 ```bash
   cd API-MERCADOPAGO-DJANGO
 ```
 
 ## Setup
-Crear un entorno virtual y lo activamos:
+Crear un entorno virtual y activarlo:
 
 ```sh
 $ python virtualenv venv
@@ -37,13 +45,13 @@ Luego instalar las librerias:
 (env)$ pip install -r requirements.txt
 ```
 
-Luego realizamos las migraciones.
+Luego realizar las migraciones.
 ```sh
 (env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 ```
 
-Una vez concluido, procedemos a iniciar la app
+Una vez concluido, procedemos a iniciar la apliación
 ```sh
 (env)$ python manage.py runserver
 ```

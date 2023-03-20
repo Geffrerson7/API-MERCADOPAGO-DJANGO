@@ -4,7 +4,6 @@ from django.conf import settings
 import mercadopago
 import json
 
-
 class ProcessPaymentAPIView(APIView):
     def post(self, request):
         request_values = json.loads(request.body)
