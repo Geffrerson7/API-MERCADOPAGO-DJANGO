@@ -32,7 +32,7 @@ Ir al directorio del proyecto
 Crear un entorno virtual y activarlo:
 
 ```sh
-$ python virtualenv venv
+$ virtualenv venv
 # windows
 $ source venv/Scripts/activate
 # Linux
@@ -47,7 +47,6 @@ Luego instalar las librerias:
 
 Luego realizar las migraciones.
 ```sh
-(env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 ```
 
