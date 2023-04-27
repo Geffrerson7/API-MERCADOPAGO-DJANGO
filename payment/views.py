@@ -21,8 +21,8 @@ class ProcessPaymentAPIView(APIView):
                 },
             },
         }
-
-        sdk = mercadopago.SDK(settings.YOUR_ACCESS_TOKEN)
+        
+        sdk = mercadopago.SDK(str(settings.YOUR_ACCESS_TOKEN))
         payment_response = sdk.payment().create(payment_data)
         payment = payment_response["response"]
         status = {
