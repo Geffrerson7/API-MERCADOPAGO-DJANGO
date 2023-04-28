@@ -26,8 +26,8 @@ class ProcessPaymentAPIView(APIView):
         payment_response = sdk.payment().create(payment_data)
         payment = payment_response["response"]
         status = {
-            "id=": payment["id"],
+            "id": payment["id"],
             "status": payment["status"],
             "status_detail": payment["status_detail"],
         }
-        return Response(data=status, status=201)
+        return Response(data={"body":status, "statusCode":201}, status=201)
