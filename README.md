@@ -4,7 +4,8 @@
 API hecha con Django Rest Framework para crear pago con la librería de mercadopago en python
 
 ## Respuesta en la consola
-![api-django-mercado-pago](https://user-images.githubusercontent.com/61089189/226239748-e84c6473-2839-41e0-b152-7b416420b81a.png)
+
+![payment-response](https://user-images.githubusercontent.com/61089189/235060452-b6615b8f-9fc2-4757-afb7-2f3c48d9b744.png)
 
 ## Environment Variables
 
@@ -54,6 +55,9 @@ Una vez concluido, procedemos a iniciar la apliación
 ```sh
 (env)$ python manage.py runserver
 ```
+
+## Aplicación frontend de prueba
+[Shopping Cart](https://github.com/Geffrerson7/SHOPPING-CART)
 
 ## Autor
 - [Gefferson Max Casasola Huamancusi](https://www.github.com/Geffrerson7)
